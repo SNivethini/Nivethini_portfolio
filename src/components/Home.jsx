@@ -48,9 +48,9 @@ function Home() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="flex md:w-[400px] text-sm md:text-lg font-medium gap-[50px] pb-[50px]"
+                className="flex flex-col md:flex-row md:w-[400px] text-sm md:text-lg font-medium gap-[50px] pb-[50px]"
               >
-                <div className="px-[40px] py-[10px] rounded-lg border border-black bg-blue-950 text-white hover:text-black hover:bg-transparent">
+                <div className="px-[40px] py-[10px] text-thin md:text-lg rounded-lg border border-black bg-blue-950 text-white hover:text-black hover:bg-transparent">
                   <a href={Bio.resume} target="blank">
                     <button>Resume</button>
                   </a>

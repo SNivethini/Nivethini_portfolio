@@ -26,7 +26,7 @@ export const Contact = () => {
 
   return (
     <form
-      className="flex flex-col w-[250px] sm:w-[320px] text-blue-950 "
+      className="flex flex-col w-[180px] sm:w-[320px] text-blue-950 "
       ref={form}
       onSubmit={sendEmail}
     >

@@ -57,7 +57,7 @@ function Works() {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className=""
+            className="pl-[30px]"
           >
             <p className="text-lg font-thick pb-[10px]">Projects</p>
             <p className="text-3xl font-bold pb-[40px]">
@@ -66,17 +66,17 @@ function Works() {
           </motion.div>
 
           <div className="Slider-container">
-            <Slider {...settings} className="W-[300PX P-[50PX]]">
-              <div className="w-[200px] mr-[10px]">
+            <Slider {...settings} className="">
+              <div className="w-[200px] ">
                 <span className="pb-[20px]">REACT & TAILWIND</span>
                 <img src={Ecommerce} alt="" />
               </div>
 
-              <div className="w-[300px] mr-[10px]">
+              <div className="w-[300px]">
                 <span>REACT & CSS</span>
                 <img src={MovieWatchlist} alt="" />
               </div>
-              <div className="w-[300px] mr-[10px]">
+              <div className="w-[300px] ">
                 <span>REACT & TAILWIND</span>
                 <img src={oldPortfolio} alt="" />
               </div>

@@ -39,7 +39,7 @@ function MainContact() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" md:w-[60%] sm:flex sm:justify-center"
+              className="w-[30%] md:w-[60%] sm:flex sm:justify-center"
             >
               <Contact />
             </motion.div>

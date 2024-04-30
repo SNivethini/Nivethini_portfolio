@@ -152,10 +152,10 @@ function Main() {
         </div>
       </div>
       {/* ----------------MOBILE VIEW-------------------------------------------------------------------------------- */}
-      <div className=" relative mx-auto text-blue-950    ">
-        <div className="lg:hidden  bg-white sticky  top-0 p-[10px] z-[2]">
-          <div className="  w-[88%] max-w-[1340px] mx-auto">
-            <div className="  flex justify-between">
+    
+        <div className=" lg:hidden  bg-white sticky  top-0 p-[10px] z-[2] ">
+          <div className="w-[88%] max-w-[1340px] mx-auto">
+            <div className="  flex justify-between text-blue-950">
               <p className="text-xl font-bold italic">{Bio.fname}</p>
               <div className="z-[10] " onClick={handleClick}>
                 <FaBars />
@@ -200,8 +200,7 @@ function Main() {
           </div>
         </div>
 
-        
-      </div>
+
       <Home />
 
         <Skills />

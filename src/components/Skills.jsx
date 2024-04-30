@@ -17,12 +17,12 @@ function Skills() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-2xl "
+              className="text-2xl pl-[30px] "
             >
               {" "}
               SKILLS and <span className="font-bold text-blue-700">TOOLS</span>
             </motion.p>
-            <div className="flex flex-col items-center  md:flex-row md:justify-between md:items-center lg:pl-[50px] py-[40px] mb-[10px] pr-[30px]">
+            <div className="flex flex-col  sm:items-center md:flex-row md:justify-between md:items-center lg:pl-[50px] py-[40px] mb-[10px] ">
               <motion.div
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
@@ -34,19 +34,19 @@ function Skills() {
               </motion.div>
 
               <motion.div
-                variants={fadeIn("left", 0.3)}
+                variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="mt-[100px] mr-[25px] md:mr-[1px] md:mt-[30px] w-[50%] h-[200px] text-blue-950  relative "
+                className="mt-[100px]   md:mt-[30px] w-[30%] md:w-[50%] h-[200px] text-blue-950  relative "
               >
                 <p className="absolute top-[10px]  font-extrabold text-2xl">
                   HTML
                 </p>
-                <p className="absolute left-[60px]  top-[94px]  font-extrabold text-xl">
+                <p className="absolute left-[60px]  top-[114px]  font-bold text-lg">
                   CSS
                 </p>
-                <p className="absolute left-[120px]  top-[-35px] font-extrabold text-2xl">
+                <p className="absolute left-[120px]  top-[-35px] font-bold text-2xl">
                   JAVASCRIPT
                 </p>
                 <p className="absolute left-[130px]  top-[90px] text-medium font-medium">

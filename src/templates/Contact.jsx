@@ -4,7 +4,7 @@ import { useState } from "react";
 export const Contact = () => {
   const form = useRef();
 
-  const [getemail, setEmail] = useState()
+  const [email, setEmail] = useState()
   const [error, setError] = useState()
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +17,7 @@ export const Contact = () => {
           alert("Mail sent!");
         },
         (error) => {
+          setError('FAILED...');
           console.log("FAILED...", error.text);
         }
       );

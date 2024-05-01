@@ -10,61 +10,61 @@ function Skills() {
     <div>
         <div
             id="skill"
-            className=" w-[88%] max-w-[1340px]  lg:pl-[300px] py-[70px] h-auto mx-auto   text-blue-950"
+            className=" w-[88%] max-w-[1340px]  lg:pl-[300px] pt-[100px] lg:py-[60px] h-auto mx-auto   text-blue-950"
           >
             <motion.p
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="text-2xl pl-[30px] "
             >
               {" "}
               SKILLS and <span className="font-bold text-blue-700">TOOLS</span>
             </motion.p>
-            <div className="flex flex-col  sm:items-center md:flex-row md:justify-between md:items-center lg:pl-[50px] py-[40px] mb-[10px] ">
+            <div className="flex flex-col items-center md:flex-row md:justify-around md:items-center lg:pl-[50px] py-[40px] mb-[10px] ">
               <motion.div
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: true, amount: 0.7 }}
                 className=""
               >
-                <Lottie style={{ width: 320 }} animationData={Skill} />
+                <Lottie style={{ width: 250 }} animationData={Skill} />
               </motion.div>
 
               <motion.div
                 variants={fadeIn("up", 0.3)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="mt-[100px]   md:mt-[30px] w-[30%] md:w-[50%] h-[200px] text-blue-950  relative "
+                viewport={{ once: true, amount: 0.7 }}
+                className="mt-[100px] max-w-[300px] w-[100%]  md:mt-[30px] lg:w-[50%] md:w-[50%] h-[200px] text-blue-950  relative "
               >
-                <p className="absolute top-[10px]  font-extrabold text-2xl">
+                <p className="absolute top-[10px] left-[10px] font-extrabold text-2xl">
                   HTML
                 </p>
-                <p className="absolute left-[60px]  top-[114px]  font-bold text-lg">
+                <p className="absolute left-[60px]  top-[104px]  font-bold text-lg">
                   CSS
                 </p>
-                <p className="absolute left-[120px]  top-[-35px] font-bold text-2xl">
+                <p className="absolute sm:left-[140px] left-[100px] top-[-35px] font-bold text-2xl">
                   JAVASCRIPT
                 </p>
                 <p className="absolute left-[130px]  top-[90px] text-medium font-medium">
                   TailwindCSS
                 </p>
-                <p className="absolute left-[240px]  top-[70px] font-extrabold text-xl">
+                <p className="absolute md:left-[260px] left-[190px]  top-[60px] font-extrabold text-xl">
                   ReactJS
                 </p>
                 <p className="absolute top-[130px]  left-[80px] text-lg font-bold">
                   GIT
                 </p>
-                <p className="absolute left-[200px]  top-[40px]  text-lg font-bold">
+                <p className="absolute left-[180px]  top-[40px]  text-lg font-bold">
                   npm
                 </p>
-                <p className=" absolute left-[220px] text-lg font-bold">
+                <p className=" absolute left-[200px] md:left-[240px] text-lg font-bold">
                   Babel
                 </p>
-                <p className=" absolute top-[80px] left-[-10px] text-medium font-medium">
+                <p className=" absolute top-[100px] md:left-[290px] left-[220px] text-medium font-medium">
                   SQL
                 </p>
                 <p className="absolute left-[150px]  top-[170px] text-medium font-medium">

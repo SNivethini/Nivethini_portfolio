@@ -26,12 +26,12 @@ export const Contact = () => {
 
   return (
     <form
-      className="flex flex-col w-[180px] sm:w-[320px] text-blue-950 "
+      className="flex flex-col max-w-[600px] w-[100%] text-blue-950 "
       ref={form}
       onSubmit={sendEmail}
     >
       <label className="pt-[10px]">Name </label>
-      <input type="text" name="from_name" required/>
+      <input type="text" style={{backgroundColor:"white"}} name="from_name" required/>
       <label className="pt-[10px]">Email</label>
       <input type="email" name="from_email" onChange={()=>{setEmail(e.target.value)}} formNoValidate required />{error}
       <label className="pt-[10px]">Message</label>

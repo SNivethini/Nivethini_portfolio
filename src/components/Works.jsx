@@ -50,16 +50,16 @@ function Works() {
     <div>
            <div
           id="portfolio"
-          className="w-[88%] max-w-[1340px] mx-auto  lg:pl-[300px] py-[80px] bg-white"
+          className="w-[88%] max-w-[1340px] mx-auto  lg:pl-[300px] pt-[100px] pb-[30px] lg:py-[60px] bg-white"
         >
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="pl-[30px]"
           >
-            <p className="text-lg font-thick pb-[10px]">Projects</p>
+            <p className="text-lg font-thick pb-[10px]">-Projects</p>
             <p className="text-3xl font-bold pb-[40px]">
               Recent Completed works
             </p>
@@ -67,8 +67,8 @@ function Works() {
 
           <div className="Slider-container">
             <Slider {...settings} className="">
-              <div className="w-[200px] ">
-                <span className="pb-[20px]">REACT & TAILWIND</span>
+              <div className=" ">
+                <span className="">REACT & TAILWIND</span>
                 <img src={Ecommerce} alt="" />
               </div>
 

@@ -10,7 +10,7 @@ function WorkExp() {
   return (
     <div>
         <div id="about" className="bg-blue-50 p-[20px] lg:pl-[300px] h-auto">
-            <div className="  py-[80px] max-w-[1340px] w-[88%] mx-auto">
+            <div className=" pb-[30px] lg:py-[60px] max-w-[1340px] w-[88%] mx-auto">
               {/* <div>
                 <p className="text-lg font-thick pb-[10px]"></p>
               </div> */}
@@ -19,27 +19,27 @@ function WorkExp() {
                   variants={fadeIn("right", 0.3)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.7 }}
+                  viewport={{ once: true, amount: 0.7 }}
                   className="text-3xl font-bold pb-[40px]"
                 >
                   - Experience
                 </motion.p>
               </div>
-              <div className="flex flex-col md:flex-row sm:items-center md:justify-around mx-auto ">
+              <div className="flex flex-col md:flex-row items-center md:justify-around mx-auto ">
                 <motion.div
                   variants={fadeIn("right", 0.3)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.7 }}
+                  viewport={{ once: true, amount: 0.7 }}
                 >
                   <Lottie style={{ width: 200 }} animationData={Experience} />
                 </motion.div>
                 <motion.div
-                  variants={fadeIn("left", 0.3)}
+                  variants={fadeIn("up", 0.3)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ once: false, amount: 0.7 }}
-                  className=" w-[230px] md:w-[400px] shadow-xl p-[30px] bg-white rounded-md hover:transform hover:-translate-y-5 hover:transition-all hover:ease duration-300 "
+                  viewport={{ once: true, amount: 0.7 }}
+                  className=" max-w-[450px] w-[100%] shadow-xl p-[30px] bg-white rounded-md hover:transform hover:-translate-y-5 hover:transition-all hover:ease duration-300 "
                 >
                   <div className="flex flex-col md:flex-row md:justify-between">
                     <div>

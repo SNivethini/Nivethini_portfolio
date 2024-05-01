@@ -12,14 +12,14 @@ function MainContact() {
     <div>
         <div
           id="contact"
-          className="pl-[30px] lg:pl-[300px]  text-blue-950 py-[80px] bg-blue-50 pr-[30px]"
+          className="pl-[30px] lg:pl-[300px]  text-blue-950 pt-[100px] pb-[30px] lg:py-[60px] bg-blue-50 pr-[30px]"
         >
-          <div className="flex-col  justify-center w-[88%] max-w-[1340px] mx-auto flex md:flex-row  ">
+          <div className="flex-col  justify-between w-[88%] max-w-[1340px] mx-auto flex md:flex-row  ">
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className=" md:w-[40%] "
             >
               <p className="text-medium sm:text-lg font-thick pb-[10px]">
@@ -38,8 +38,8 @@ function MainContact() {
               variants={fadeIn("left", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="w-[30%] md:w-[60%] sm:flex sm:justify-center"
+              viewport={{ once: true, amount: 0.7 }}
+              className="max-w-[400px] w-[100%] md:w-[50%] sm:flex sm:justify-center"
             >
               <Contact />
             </motion.div>

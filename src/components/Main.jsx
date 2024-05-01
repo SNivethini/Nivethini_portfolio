@@ -101,7 +101,7 @@ function Main() {
             >
               Experience
             </Link>
-            {/* </a> */}
+            
             <Link
               activeClass="active"
               to="portfolio"
@@ -109,8 +109,7 @@ function Main() {
               smooth={true}
               offset={50}
               duration={500}
-              // <a
-              //         href="#portfolio"
+              
               onClick={() => {
                 setMenu("Portfolio");
               }}
@@ -153,9 +152,9 @@ function Main() {
       </div>
       {/* ----------------MOBILE VIEW-------------------------------------------------------------------------------- */}
     
-        <div className=" lg:hidden  bg-white sticky  top-0 p-[10px] z-[2] ">
+        <div className=" lg:hidden  bg-white sticky  top-0 py-[10px] z-[2] ">
           <div className="w-[88%] max-w-[1340px] mx-auto">
-            <div className="  flex justify-between text-blue-950">
+            <div className="  flex justify-between items-center text-blue-950">
               <p className="text-xl font-bold italic">{Bio.fname}</p>
               <div className="z-[10] " onClick={handleClick}>
                 <FaBars />
@@ -167,33 +166,64 @@ function Main() {
               className={
                 nav
                   ? "hidden"
-                  : " z-[2] bg-white transition shadow-xl shadow-blue-400 duration-300  fixed right-0  top-0 w-[200px]  h-[100vh] flex flex-col gap-6 justify-center items-center"
+                  : " z-[2] bg-white transition  shadow-xl shadow-blue-400 duration-300  fixed right-0  top-0 w-[200px]  h-[100vh] flex flex-col gap-6 justify-center items-center"
               }
             >
               <li>
-                <a href="#home " onClick={ClickList}>
+              <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              
+              duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#skill " onClick={ClickList}>
+              <Link
+              activeClass="active"
+              to="skill"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500} className=" cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
                   Skill
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" onClick={ClickList}>
+              <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              
+              duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
                   Experience
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#portfolio" onClick={ClickList}>
+              <Link
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500} className= "cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
                   Works
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" onClick={ClickList}>
+              <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+               className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
                   Contact
-                </a>
+                </Link>
               </li>
               <MediaLinnks />
             </ul>

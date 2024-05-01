@@ -17,12 +17,12 @@ import MainContact from "./MainContact";
 
 function Main() {
   const [menu, setMenu] = useState("Home");
-  const [nav, setNave] = useState("false");
+  const [menuToggle, setMenuToggle] = useState(false);
   const [clicked, SetClicked] = useState("false");
   const ClickList = () => {
     SetClicked(!clicked);
   };
-  const handleClick = () => setNave(!nav);
+  const handleClick = () => setMenuToggle(!menuToggle);
   return (
     <div>
       <div className="hidden lg:fixed  top-0 left-0 z-[1] w-[300px] bg-white h-[100vh] lg:flex flex-col justify-between ">
@@ -156,12 +156,7 @@ function Main() {
           </div>
 
           <ul
-            className={
-              nav
-                ? "hidden"
-                : " z-[2] bg-white transition  shadow-xl shadow-blue-400 duration-300  fixed right-0  top-0 w-[200px]  h-[100vh] flex flex-col gap-6 justify-center items-center"
-            }
-          >
+            className={`z-[2] bg-white shadow-xl shadow-blue-400 transition-all ease-in-out duration-300 fixed top-0 w-[200px] h-[100vh] flex flex-col gap-6 justify-center items-center ${menuToggle ? 'right-0':'right-[-200px]'}`}>
             <li>
               <Link
                 activeClass="active"

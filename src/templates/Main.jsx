@@ -156,7 +156,6 @@ function Main() {
           </div>
 
           <ul
-            class={!clicked ? "hidden" : " hidden"}
             className={
               nav
                 ? "hidden"

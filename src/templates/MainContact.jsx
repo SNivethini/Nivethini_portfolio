@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion, useScroll } from "framer-motion";
+/* eslint-disable react/no-unescaped-entities */
+import { motion } from "framer-motion";
 import { Contact } from "./Contact";
 import { fadeIn } from "../data/Variants";
 import Lottie from "lottie-react";

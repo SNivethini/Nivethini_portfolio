@@ -1,7 +1,5 @@
-import React from 'react'
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { fadeIn } from "../data/Variants";
-import { Link } from "react-scroll";
 import Lottie from "lottie-react";
 import Skill from "../assets/Skill.json";
 

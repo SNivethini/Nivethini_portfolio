@@ -1,7 +1,5 @@
-import React from 'react'
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { fadeIn } from "../data/Variants";
-import { Link } from "react-scroll";
 import Lottie from "lottie-react";
 import Experience from "../assets/Experience.json";
 import { Bio } from '../data/constants'
@@ -55,11 +53,9 @@ function WorkExp() {
                     </div>
                   </div>
                   <p className="text-gray-600 font-normal text-base pt-[20px]">
-                    {Bio.ExperienceDesc.map((exp) => {
+                    {Bio.ExperienceDesc.map((exp, i) => {
                       return (
-                        <div>
-                          <li>{exp}</li>
-                        </div>
+                          <li key={i}>{exp}</li>
                       );
                     })}
                   </p>

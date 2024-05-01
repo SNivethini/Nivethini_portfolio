@@ -1,16 +1,11 @@
-import React from 'react'
-import  { useRef, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
 import Ecommerce from "../data/Ecommerce.jpeg";
 import MovieWatchlist from "../data/MovieWatchlist.jpeg";
 import oldPortfolio from "../data/old-Portfolio.jpeg";
-import Lottie from "lottie-react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { fadeIn } from "../data/Variants";
-import { Link } from "react-scroll";
 
 function Works() {
     const settings = {

@@ -1,15 +1,13 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 export const Contact = () => {
   const form = useRef();
 
-  const [getemail,setEmail]=useState()
-  const [error,setError]=useState()
+  const [getemail, setEmail] = useState()
+  const [error, setError] = useState()
   const sendEmail = (e) => {
     e.preventDefault();
-    
-
     emailjs
       .sendForm("service_q5qesvb", "template_x894o4i", form.current, {
         publicKey: "RLbdr2I5qOEe-CqZW",
@@ -31,11 +29,11 @@ export const Contact = () => {
       onSubmit={sendEmail}
     >
       <label className="pt-[10px]">Name </label>
-      <input type="text" style={{backgroundColor:"white"}} name="from_name" required/>
+      <input type="text" style={{ backgroundColor: "white" }} name="from_name" required />
       <label className="pt-[10px]">Email</label>
-      <input type="email" name="from_email" onChange={()=>{setEmail(e.target.value)}} formNoValidate required />{error}
+      <input type="email" name="from_email" onChange={(e) => { setEmail(e.target.value) }} formNoValidate required />{error}
       <label className="pt-[10px]">Message</label>
-      <textarea name="message" required/>
+      <textarea name="message" required />
       <input
         className="border border-black w-[80px] rounded-md bg-blue-950 text-white mt-[20px]"
         type="submit"

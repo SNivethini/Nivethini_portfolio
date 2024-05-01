@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: 'Mulish', sans-serif;
+}
 .slick-slide > div{
     /* margin: 0 0px;
     width: 300px; */

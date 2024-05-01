@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import { Bio } from "../data/constants";
 import mypic from "../data/mypic.jpg";
 
@@ -55,9 +54,8 @@ function Main() {
               onClick={() => {
                 setMenu("Home");
               }}
-              className={`cursor-pointer ${
-                menu === "Home" ? "text-blue-600 " : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "Home" ? "text-blue-600 " : "text-blue-950"
+                }`}
             >
               {" "}
               About
@@ -74,9 +72,8 @@ function Main() {
               onClick={() => {
                 setMenu("skill");
               }}
-              className={`cursor-pointer ${
-                menu === "skill" ? "text-blue-600 " : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "skill" ? "text-blue-600 " : "text-blue-950"
+                }`}
             >
               {" "}
               Skills
@@ -95,13 +92,12 @@ function Main() {
               onClick={() => {
                 setMenu("About");
               }}
-              className={`cursor-pointer ${
-                menu === "About" ? "text-blue-600" : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "About" ? "text-blue-600" : "text-blue-950"
+                }`}
             >
               Experience
             </Link>
-            
+
             <Link
               activeClass="active"
               to="portfolio"
@@ -109,13 +105,12 @@ function Main() {
               smooth={true}
               offset={50}
               duration={500}
-              
+
               onClick={() => {
                 setMenu("Portfolio");
               }}
-              className={`cursor-pointer ${
-                menu === "Portfolio" ? "text-blue-600" : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "Portfolio" ? "text-blue-600" : "text-blue-950"
+                }`}
             >
               Works
               {/* </a> */}
@@ -132,9 +127,8 @@ function Main() {
               onClick={() => {
                 setMenu("Contact");
               }}
-              className={`cursor-pointer ${
-                menu === "Contact" ? "text-blue-600" : "text-blue-950"
-              }`}
+              className={`cursor-pointer ${menu === "Contact" ? "text-blue-600" : "text-blue-950"
+                }`}
             >
               Contact
               {/* </a> */}
@@ -151,92 +145,92 @@ function Main() {
         </div>
       </div>
       {/* ----------------MOBILE VIEW-------------------------------------------------------------------------------- */}
-    
-        <div className=" lg:hidden  bg-white sticky  top-0 py-[10px] z-[2] ">
-          <div className="w-[88%] max-w-[1340px] mx-auto">
-            <div className="  flex justify-between items-center text-blue-950">
-              <p className="text-xl font-bold italic">{Bio.fname}</p>
-              <div className="z-[10] " onClick={handleClick}>
-                <FaBars />
-              </div>
-            </div>
 
-            <ul
-              class={!clicked ? "hidden" : " hidden"}
-              className={
-                nav
-                  ? "hidden"
-                  : " z-[2] bg-white transition  shadow-xl shadow-blue-400 duration-300  fixed right-0  top-0 w-[200px]  h-[100vh] flex flex-col gap-6 justify-center items-center"
-              }
-            >
-              <li>
-              <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              
-              duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
-                  About
-                </Link>
-              </li>
-              <li>
-              <Link
-              activeClass="active"
-              to="skill"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} className=" cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
-                  Skill
-                </Link>
-              </li>
-              <li>
-              <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              
-              duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
-                  Experience
-                </Link>
-              </li>
-              <li>
-              <Link
-              activeClass="active"
-              to="portfolio"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} className= "cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
-                  Works
-                </Link>
-              </li>
-              <li>
-              <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-               className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
-                  Contact
-                </Link>
-              </li>
-              <MediaLinnks />
-            </ul>
+      <div className=" lg:hidden  bg-white sticky  top-0 py-[10px] z-[2] ">
+        <div className="w-[88%] max-w-[1340px] mx-auto">
+          <div className="  flex justify-between items-center text-blue-950">
+            <p className="text-xl font-bold italic">{Bio.fname}</p>
+            <div className="z-[10] " onClick={handleClick}>
+              <FaBars />
+            </div>
           </div>
+
+          <ul
+            class={!clicked ? "hidden" : " hidden"}
+            className={
+              nav
+                ? "hidden"
+                : " z-[2] bg-white transition  shadow-xl shadow-blue-400 duration-300  fixed right-0  top-0 w-[200px]  h-[100vh] flex flex-col gap-6 justify-center items-center"
+            }
+          >
+            <li>
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+
+                duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="skill"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} className=" cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
+                Skill
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+
+                duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
+                Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
+                Works
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="cursor-pointer hover:hover:text-blue-700" onClick={ClickList}>
+                Contact
+              </Link>
+            </li>
+            <MediaLinnks />
+          </ul>
         </div>
+      </div>
 
 
       <Home />
 
-        <Skills />
-        <WorkExp />
-        <Works />
-        <MainContact />
+      <Skills />
+      <WorkExp />
+      <Works />
+      <MainContact />
     </div>
   );
 }

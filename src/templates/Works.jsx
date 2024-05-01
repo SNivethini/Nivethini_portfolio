@@ -22,7 +22,6 @@ function Works() {
         autoplay: true,
         autoplaySpeed: 4000,
         pauseOnHover: true,
-    
         responsive: [
           {
             breakpoint: 1024,
@@ -34,15 +33,9 @@ function Works() {
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
+              adaptiveHeight: true
             },
           },
-          // {
-          //   breakpoint: 640,
-          //   settings: {
-          //     slidesToShow: 1,
-    
-          //   }
-          // }
         ],
       };
     
@@ -50,7 +43,7 @@ function Works() {
     <div>
            <div
           id="portfolio"
-          className="w-[88%] max-w-[1340px] mx-auto  lg:pl-[300px] pt-[100px] pb-[30px] lg:py-[60px] bg-white"
+          className="w-[88%] max-w-[1340px] mx-auto  lg:pl-[300px] pt-[60px] pb-[60px] lg:py-[60px] bg-white"
         >
           <motion.div
             variants={fadeIn("right", 0.3)}

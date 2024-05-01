@@ -10,7 +10,7 @@ function Skills() {
     <div>
         <div
             id="skill"
-            className=" w-[88%] max-w-[1340px]  lg:pl-[300px] pt-[100px] lg:py-[60px] h-auto mx-auto   text-blue-950"
+            className=" w-[88%] max-w-[1340px]  lg:pl-[300px] pt-[60px] lg:py-[60px] h-auto mx-auto   text-blue-950"
           >
             <motion.p
               variants={fadeIn("right", 0.3)}
@@ -38,7 +38,7 @@ function Skills() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.7 }}
-                className="mt-[100px] max-w-[300px] w-[100%]  md:mt-[30px] lg:w-[50%] md:w-[50%] h-[200px] text-blue-950  relative "
+                className="mt-[60px] max-w-[300px] w-[100%]  md:mt-[30px] lg:w-[50%] md:w-[50%] h-[200px] text-blue-950  relative "
               >
                 <p className="absolute top-[10px] left-[10px] font-extrabold text-2xl">
                   HTML

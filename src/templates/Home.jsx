@@ -66,7 +66,7 @@ function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
-              className="flex flex-col  sm:flex-row justify-center items-center w-[100%] text-sm md:text-lg font-medium gap-[25px] pb-[25px]"
+              className="flex flex-col  sm:flex-row justify-center items-center md:justify-start w-[100%] text-sm md:text-lg font-medium gap-[25px] pb-[25px]"
             >
               <div className="px-[0px] py-[7px] max-w-[200px] sm:max-w-[140px] w-[100%] flex items-center justify-center text-thin md:text-md rounded-lg border border-black bg-blue-950 text-white hover:text-black hover:bg-transparent">
                 <a href={Bio.resume} target="blank">
@@ -85,7 +85,7 @@ function Home() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
-              className="flex justify-center items-center gap-[20px] "
+              className="flex justify-center items-center md:justify-start gap-[20px] "
             >
 
               <PersonalDetails />

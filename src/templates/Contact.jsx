@@ -28,14 +28,14 @@ export const Contact = () => {
       ref={form}
       onSubmit={sendEmail}
     >
-      <label className="pt-[10px]">Name </label>
-      <input type="text" style={{ backgroundColor: "white" }} name="from_name" required />
-      <label className="pt-[10px]">Email</label>
-      <input type="email" name="from_email" onChange={(e) => { setEmail(e.target.value) }} formNoValidate required />{error}
-      <label className="pt-[10px]">Message</label>
-      <textarea name="message" required />
+      <label className="pt-[10px] pb-[5px]">Name </label>
+      <input type="text" className="bg-[#fff] py-[8px] px-[15px] rounded-[5px]" name="from_name" required />
+      <label className="pt-[10px] pb-[5px]">Email</label>
+      <input type="email" name="from_email" className="bg-[#fff] py-[8px] px-[15px] rounded-[5px]" onChange={(e) => { setEmail(e.target.value) }} formNoValidate required />{error}
+      <label className="pt-[10px] pb-[5px]">Message</label>
+      <textarea name="message" className="bg-[#fff] py-[8px] px-[15px] rounded-[5px]" required />
       <input
-        className="border border-black w-[80px] rounded-md bg-blue-950 text-white mt-[20px]"
+        className="border border-black w-full rounded-[5px] bg-blue-950 text-white mt-[20px] p-[8px] cursor-pointer"
         type="submit"
         value="Send"
       />

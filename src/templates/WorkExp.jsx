@@ -9,7 +9,7 @@ import { Bio } from '../data/constants'
 function WorkExp() {
   return (
     <div>
-        <div id="about" className="bg-blue-50 p-[20px] lg:pl-[300px] h-auto">
+        <div id="about" className="bg-blue-50 lg:pl-[300px] h-auto">
             <div className=" pb-[30px] lg:py-[60px] max-w-[1340px] w-[88%] mx-auto">
               {/* <div>
                 <p className="text-lg font-thick pb-[10px]"></p>
@@ -20,7 +20,7 @@ function WorkExp() {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: true, amount: 0.7 }}
-                  className="text-3xl font-bold pb-[40px]"
+                  className="text-3xl font-bold pt-[40px] sm:pt-0 sm: pb-[40px]"
                 >
                   - Experience
                 </motion.p>

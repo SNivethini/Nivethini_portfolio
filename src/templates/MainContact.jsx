@@ -12,15 +12,15 @@ function MainContact() {
     <div>
         <div
           id="contact"
-          className="pl-[30px] lg:pl-[300px]  text-blue-950 pt-[100px] pb-[30px] lg:py-[60px] bg-blue-50 pr-[30px]"
+          className="pl-[30px] lg:pl-[300px]  text-blue-950 pt-[60px] pb-[30px] lg:py-[60px] bg-blue-50 pr-[30px]"
         >
-          <div className="flex-col  justify-between w-[88%] max-w-[1340px] mx-auto flex md:flex-row  ">
+          <div className="flex-col items-center justify-between w-[88%] max-w-[1340px] mx-auto flex md:flex-row  ">
             <motion.div
               variants={fadeIn("right", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
-              className=" md:w-[40%] "
+              className="max-w-[550px]"
             >
               <p className="text-medium sm:text-lg font-thick pb-[10px]">
                 - LET'S CONNECT
@@ -39,7 +39,7 @@ function MainContact() {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: true, amount: 0.7 }}
-              className="max-w-[400px] w-[100%] md:w-[50%] sm:flex sm:justify-center"
+              className="max-w-[400px] w-[100%] md:w-[50%] sm:flex sm:justify-center pt-[20px]"
             >
               <Contact />
             </motion.div>
